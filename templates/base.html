@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+    <head>
+
+        {% block head %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css') }}" />
+        <title>{% block title %}{% endblock %} - brahmnw.ca</title>
+        {% endblock %}
+
+    </head>
+
+    <body>
+        <div id="header">
+            <img src="{{url_for('static', filename='/images/logo.png')}}">
+        </div>
+        <div id="container">
+            <div id="content">{% block content %} {% endblock %}</div>
+
+            <div id="footer">
+                {% block footer %} 
+
+                {% endblock %}
+            </div>
+        </div>
+        
+    </body>
+
+</html>
