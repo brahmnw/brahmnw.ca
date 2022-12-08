@@ -12,7 +12,7 @@
 
     <body>
         <div id="header">
-            <img src="{{url_for('static', filename='/images/logo.png')}}">
+            <img id="header_logo" src="{{url_for('static', filename='/images/logo.png')}}">
         </div>
         <div id="container">
             <div id="content">{% block content %} {% endblock %}</div>
