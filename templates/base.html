@@ -24,11 +24,15 @@
                 <div id="splash-page-subtitle">{% block page_subtitle %} {% endblock %}</div>
             </div>
 
-            <div id="content">{% block content %} {% endblock %}</div>
+            <div id="content">
+                <div id="content-box">
+                    {% block content %} 
+                    {% endblock %}
+                </div>
+            </div>
 
             <div id="footer">
                 {% block footer %} 
-
                 {% endblock %}
             </div>
         </div>
