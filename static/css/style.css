@@ -3,6 +3,11 @@ body {
     font-family: "Segoe UI", Arial, system-ui;
 }
 
+ul {
+    padding:0;
+    margin:0;
+}
+
 a {
     color: inherit; 
     text-decoration:inherit;
@@ -35,9 +40,53 @@ body {
     margin: 0;
 }
 
+.header-navbar-buttons, .header-navbar-links {
+    display: inline;
+    font-weight: bold;
+    color: #ffffff;
+    padding-top: 0.15%;
+    padding-bottom: 0.75%;
+    padding-left: 0.75%;
+    padding-right: 0.75%;
+    margin: 0;
+}
+
+.header-navbar-links {
+    position: relative;
+    display: inline;
+}
+
+.header-navbar-buttons:hover, .header-navbar-links:hover {
+    color: #d2e7ff;
+}
+
+.header-navbar-links-content {
+    display: none;
+    position: absolute;
+    background-color: #191b22;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 10%;
+    margin-top: 20%
+}
+
+.header-navbar-links-content a {
+    color: white;
+    padding: 7%;
+    display: block;
+}
+
+.header-navbar-links-content a:hover {color:#d2e7ff;}
+
+.header-navbar-links:hover .header-navbar-links-content {
+    display: block;
+}
+
 #header-navbar-logo {
     display: inline;
     font-weight: bold;
+    color: #ffffff;
     font-size: 25px;
     padding-top: 0.15%;
     padding-bottom: 0.75%;
@@ -64,21 +113,6 @@ body {
 #header-navbar-logo-domain {
     display: inline;
     color: #ffffff;
-}
-
-#header-navbar-links {
-    display: inline;
-    font-weight: bold;
-    color: #ffffff;
-    padding-top: 0.15%;
-    padding-bottom: 0.75%;
-    padding-left: 0.75%;
-    padding-right: 0.75%;
-    margin: 0;
-}
-
-#header-navbar-links:hover {
-    color: #d2e7ff;
 }
 
 /* splash page */
@@ -116,8 +150,8 @@ body {
     color: #ffffff;
     min-width: 300px ;
     margin-top: 2.5% ;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 20%;
+    margin-left: 20%;
     padding: 1.5% ;
     box-shadow: 3px 3px 5px 2px rgba(0,0,0,0.2) ;
     line-height: 30px ;
@@ -126,7 +160,7 @@ body {
     justify-content: center ;
     align-items: center ;
     animation-name: fade-in;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
 }
 
 @keyframes fade-in {
