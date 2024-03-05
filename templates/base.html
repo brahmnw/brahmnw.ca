@@ -5,29 +5,34 @@
 
         {% block head %}
         <link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css') }}" />
-        <title>{% block title %}{% endblock %} ∙ brahm</title>
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='/images/favicon.ico') }}">
+        <title>{% block title %}{% endblock %} ∙ brhm</title>
         {% endblock %}
 
     </head>
 
     <body>
-        <div id="header">
-            <ul id="header-navbar">
-                <li id="header-navbar-logo"><a href="/"><p id="header-navbar-logo-text">brahmnw</p></a><p id="header-navbar-logo-dot">.</p><p id="header-navbar-logo-domain">ca</p></li>
-                <li class="header-navbar-buttons"><a href="/about/">about</a></li>
-                <li class="header-navbar-links">
-                    <a href="javascript:void(0)">links</a>
-                    <div class="header-navbar-links-content">
-                        <a href="https://osu.ppy.sh/users/5554231">osu!</a>
-                        <a href="https://www.instagram.com/brahmnw/">instagram</a>
-                    </div>
-                </li>
-            </ul>
+        <div id="site">
+            <div id="header">
+                <ul id="header-navbar">
+                    <li id="header-navbar-logo"><a href="/"><p id="header-navbar-logo-text-a"><b>brahm</b></p> <p id="header-navbar-logo-text-b"> บราห์ม</p></li>
+                    <li class="header-navbar-buttons"><a href="/about/">about</a></li>
+                    <li class="header-navbar-links">
+                        <a href="javascript:void(0)">links</a>
+                        <div class="header-navbar-links-content">
+                            <a href="https://www.instagram.com/brahmnw/">instagram</a>
+                            <a href="https://osu.ppy.sh/users/5554231">osu!</a>
+                            <a href="https://github.com/brahmnw">github</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="container">
+                {% block container %}
+                {% endblock %}
+            </div>
         </div>
-        <div id="container">
-            {% block container %}
-            {% endblock %}
-        </div>
+        
         
     </body>
 
