@@ -8,11 +8,6 @@ def home():
     """ Landing page """
     return flask.render_template('home.html')
 
-@app.route("/about/")
-def about():
-    """ About page """
-    return flask.render_template('about.html')
-
 @app.route("/portfolio/")
 def portfolio():
     """ Portfolio page """
