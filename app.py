@@ -13,10 +13,15 @@ def about():
     """ About page """
     return flask.render_template('about.html')
 
-@app.route("/contact/")
-def contact():
-    """ Contact page """
-    return flask.render_template('contact.html')
+@app.route("/portfolio/")
+def portfolio():
+    """ Portfolio page """
+    return flask.render_template('portfolio.html')
+
+@app.route("/gallery/")
+def gallery():
+    """ Gallery page """
+    return flask.render_template('gallery.html')
 
 @app.errorhandler(404)
 def page_not_found(e):
