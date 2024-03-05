@@ -30,7 +30,7 @@ body {
 
 #site {
     
-    width:35%;
+    width:45%;
     min-width:300px;
     flex-direction: row ;
     justify-content: center ;
@@ -44,7 +44,8 @@ body {
 
 #header {
     background-color: #ffffff;
-    padding: 2%;
+    padding: 1%;
+    padding-bottom:1.5%;
     padding-left:4%;
     margin-top: 5%;
     display: block ;
